@@ -6,3 +6,8 @@ do
   echo "I like $fruit"
 done  
 
+#loops through files
+for file in *.sh
+do
+  echo "Processing : $file"
+done  
