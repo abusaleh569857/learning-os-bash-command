@@ -17,3 +17,15 @@ for number in {1..5}
 do
   echo "number : $number"
 done  
+
+# C-style for loop
+read -p "Enter a number : " num
+add=0
+for (( i=0; i<num; i++ ))
+do
+  echo "Number : $i"
+  prev=$add
+  add=$((add + i))
+  echo "add : ($prev + $i) = $add"
+done  
+  echo "total : $add"
